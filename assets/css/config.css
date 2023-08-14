@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    font-family: Monaco, monospace;
+    text-align: center;
+}
+
+section {
+    width: 90%;
+    border: 1px solid #00ff00;
+    text-align: center;
+    padding-top: 225px;
+    padding-bottom: 225px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}

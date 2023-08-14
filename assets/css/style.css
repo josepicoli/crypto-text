@@ -1,0 +1,16 @@
+.button {
+    width: 150px; height: 40px;
+    background-color: #000000;
+    color: #00ff00;
+    border: 1px solid #00ff00;
+    margin-top: 0.4%;
+    font: normal bold 12pt Monaco, monospace;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.button:hover {
+    background-color: #00ff00;
+    color: #000000;
+    border: 1px solid #000000;    
+}
