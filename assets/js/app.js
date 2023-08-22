@@ -1,14 +1,17 @@
-// C == code
-// D == decode
-
 function cryptoText (m = "code", text) {
 
     const key = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '_', '+', '=', '[', ']', '{', '}', '|', '\\', ';', ':', "'", '"', ',', '.', '?']
 
-    m.toLowerCase().trim()
+    c = m.toLowerCase().trim()
+    mensagen = text.toLowerCase().trim()
 
-    switch(m) {
-
+    switch(c) {
+        case "code":
+            return code(mensagen)
+            break
+        case "decode":
+            return decode(mensagen)
+            break
     }
 
     function code(text) {
@@ -70,7 +73,7 @@ function cryptoText (m = "code", text) {
         .replaceAll("{", "q")
         .replaceAll("}", "r")
         .replaceAll("|", "s")
-        .replaceAll("\\", "t")
+        .replaceAll("\\\\", "t")
         .replaceAll(";", "u")
         .replaceAll(":", "v")
         .replaceAll("'", "w")
@@ -82,3 +85,7 @@ function cryptoText (m = "code", text) {
         return text_result
     }
 }
+
+t = "^!ç!?[;?=ã[?^!ç!.?!?\%=\!\(:!?=ã[?%"
+a = cryptoText ("decode", t)
+console.log(a)
