@@ -1,5 +1,5 @@
-let decode = window.document.getElementById("decode")
-decode.addEventListener("click", decoding)
+let decodeButton = window.document.getElementById("decode")
+decodeButton.addEventListener("click", decoding)
 
 function decoding() {
     let input = window.document.getElementById("input")
